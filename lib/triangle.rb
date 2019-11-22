@@ -18,7 +18,7 @@ class Triangle
         return :equilateral
       
       else
-        return :scalene
+        return :isosceles
       end
     end
   end
