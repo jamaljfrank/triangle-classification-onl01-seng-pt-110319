@@ -16,8 +16,7 @@ class Triangle
     sides.each do |x, y, z|
       if x == y && y == z && z == x 
         return :equilateral
-      elsif x == y || y == z || z == x
-        return :isosceles
+      
       else
         return :scalene
       end
