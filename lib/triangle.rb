@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene, "sx, :sy, :sz"
+  attr_accessor :equilateral, :isosceles, :scalene, :sx, :sy, :sz
  
   class TriangleError < StandardError
     # triangle error code
