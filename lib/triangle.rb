@@ -11,6 +11,10 @@ class Triangle
     @sz = sz
   end
   
-  def kind
-    
+  def kind(self)
+    sides = [sx, sy, sz]
+    sides.each do |a, b|
+      if a == b
+        
+      
 end
