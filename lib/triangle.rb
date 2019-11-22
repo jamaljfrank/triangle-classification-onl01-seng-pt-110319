@@ -10,4 +10,6 @@ class Triangle
     @sy = sy
     @sz = sz
   end
+  
+  def kind
 end
