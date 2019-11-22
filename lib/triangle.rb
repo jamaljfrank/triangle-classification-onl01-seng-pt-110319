@@ -13,7 +13,7 @@ class Triangle
   
   def kind
     sides = [a, b, c]
-    sides.each do |x, y, z|
+    sides.each |x, y, z|
       if x == y && y == z && z == x 
         puts :equilateral
       elsif x == y || y == z || z == x
