@@ -1,28 +1,30 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene, :a, :b, :c
- 
-  class TriangleError < StandardError
-    # triangle error code
-  end
   
+  attr_accessor :a, :b, :c
+
   def initialize(a, b, c)
     @a = a
     @b = b
     @c = c
   end
-  
+
   def kind
-    sides = [a, b, c]
-    sides.each do |x|
-      if x == x == x
-        return :equilateral
-      
+    validate_triangle
+    if a == b && b == c
+      :equilateral
+    elsif a == b || b == c || a == c
+      :isosceles
     else
-        return :isosceles
-      end
+      :scalene
     end
   end
-      
-        
-      
+
+  def validate_triangle
+    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    [a, b, c].each {|s| real_triangle << false if s <= 0}
+    raise TriangleError if real_triangle.include?(false)
+  end
+
+  class TriangleError < StandardError
+  end
 end
