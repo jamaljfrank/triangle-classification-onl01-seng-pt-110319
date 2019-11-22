@@ -11,7 +11,7 @@ class Triangle
     @c = c
   end
   
-  def kind(self)
+  def kind
     sides = [a, b, c]
     sides.each do |x, y, z|
       if x == y && y == z && z == x 
