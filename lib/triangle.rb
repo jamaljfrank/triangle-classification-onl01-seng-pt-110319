@@ -16,8 +16,9 @@ class Triangle
     sides.each do |x, y, z|
       if x == y && y == z && z == x 
         :equilateral
-      elsif 
-        x == y && y == z && z !== x
+      elsif x == y && y == z && z !== x
+        :isosceles
+      else
         
       
         
