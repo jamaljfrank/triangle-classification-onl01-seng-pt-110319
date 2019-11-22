@@ -1,20 +1,21 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene, :a, :sy, :sz
+  attr_accessor :equilateral, :isosceles, :scalene, :a, :b, :c
  
   class TriangleError < StandardError
     # triangle error code
   end
   
-  def initialize(sx, sy, sz)
-    @sx = sx
-    @sy = sy
-    @sz = sz
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
   
   def kind(self)
-    sides = [sx, sy, sz]
-    sides.each do |a, b|
-      if a == b
+    sides = [a, b, c]
+    sides.each do |x, y, z|
+      if x == y && y == z && z == x 
+        puts 
         
       
 end
