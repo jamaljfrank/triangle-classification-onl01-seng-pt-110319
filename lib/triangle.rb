@@ -15,7 +15,10 @@ class Triangle
     sides = [a, b, c]
     sides.each do |x, y, z|
       if x == y && y == z && z == x 
-        puts 
+        :equilateral
+      elsif 
+        x == y && y == z 
+      
         
       
 end
