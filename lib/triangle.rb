@@ -14,7 +14,7 @@ class Triangle
   def kind
     sides = [a, b, c]
     sides.each do |x|
-      if x == y 
+      if x == x
         return :equilateral
       
       else
