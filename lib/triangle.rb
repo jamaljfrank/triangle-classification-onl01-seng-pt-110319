@@ -17,7 +17,7 @@ class Triangle
       if x == x == x
         return :equilateral
       
-      elsif 
+    else
         return :isosceles
       end
     end
