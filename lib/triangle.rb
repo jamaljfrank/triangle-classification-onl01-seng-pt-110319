@@ -19,7 +19,10 @@ class Triangle
       elsif x == y && y == z && z !== x
         :isosceles
       else
-        
+        :scalene
+      end
+    end
+  end
       
         
       
