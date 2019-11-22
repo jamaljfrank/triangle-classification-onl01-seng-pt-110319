@@ -9,4 +9,5 @@ class Triangle
     @sx = sx
     @sy = sy
     @sz = sz
+  end
 end
