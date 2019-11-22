@@ -14,10 +14,10 @@ class Triangle
   def kind
     sides = [a, b, c]
     sides.each do |x|
-      if x == x
+      if x == x == x
         return :equilateral
       
-      elsif x > x
+      elsif 
         return :isosceles
       end
     end
